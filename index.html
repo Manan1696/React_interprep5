@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue">
+   <h1>Day-3 React Interview Questions</h1>
+   <h2>Q1. High Order Component in react js ?</h2>
+   <p>A higher-order component (HOC) is a function that takes a component and returns a new
+    component. Basically, it's a pattern that is derived from React's compositional nature.
+    We call them pure components because they can accept any dynamically provided child
+    component but they won't modify or copy any behavior from their input components.
+   </p>
+   <hr>
+
+   <h2>Q2. Do you know about SEO ? Is it true that react js supports SEO support ?</h2>
+   <p>SEO stands for search engine optimization. It is the process of optimizing online 
+    content so that it shows up as the top result on a search engine. It is the art of 
+    ranking high on a search engine for particular keyword searches.</p>
+   <hr>
+
+   <h2>Q3. Clean up in useEffect ?</h2>
+   <p>clean up function: this function gets executed when the component is unmounted from the screen. This is mostly used for memory leaks. //componentWillUnmount : Cleanup function in useEffect. useEffect(() =>{ console.log("Inside useEffect hook");
+   <pre>
+    return function cleanup() {
+        console.log("componentWillUnmount is happen...!")
+    }
+  })
+   </pre></p>
+   <hr>
+
+   <h2>Q4. What is the use of useCallback and useMemo ?</h2>
+   <h3>A) useMemo</h3>
+   <p>React has a built-in hook called useMemo that allows you to memoize expensive functions so that you can avoid calling them on every render. You simple pass in a function and an array of inputs and useMemo will only recompute the memoized value when one of the inputs has changed.<p>
+   <h3>B) useCallback</h3>
+   <p>useCallback will return a memoized version of the callback that only changes if one of the dependencies has changed. This is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.</p>
+   <hr>
+
+   <h2>Q5. Why do we need keys in react list ?</h2>
+   <p>The main purpose of keys is to help React differentiate and distinguish elements from each other, increasing its performance when diffing between the virtual and real DOM. To use keys, simply add the prop inside an element such as . Unique IDs are the best value to assign to keys. (or) "Key" prop is used to look pretty, and there is no benefit whatsoever. "Key" prop is a way for React to identify a newly added item in a list and compare it during the "diffing" algorithm. It is one of the attributes in HTML. It is NOT commonly used in an array.</p>
+   <hr>
+
+   <h2>Q6. Do you know about redux ?</h2>
+   <p>Redux is a pattern and library for managing and updating application state, using events called "actions".
+    It serves as a centralized store for state that needs to be used across your entire application, with rules ensuring that the state can only be updated in a predictable fashion.
+    Here is a small example of react and Redux application. You can also try developing small apps. Sample code for increase or decrease counter is given below − This is the root file which is responsible for the creation of store and rendering our react app component.
+   </p>
+</body>
+</html>
